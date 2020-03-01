@@ -1,16 +1,57 @@
-# used to ignore certain files by git
-# mac osx files
-.DS_Store
-#gradle build files
+bin/
+build/
+.settings/
 .gradle
-build
-# intellij files
-.idea/
-**/.idea/*
-**/gradle.properties
+.classpath
+.project
+.git/
+.svn*
+.settings/
+catalina*
+logs/
+out/
+*.class 
+
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# ide config
+.idea
+
+# dependencies
+/ui/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/src/pages/page-routes.js
+/src/models/all-models.js
+/suixingpay-fe/
+/server/
+
+# ignire all dir's .DS_Store
+**/.DS_Store
+test.sql
+data.sql
+dumpsql.sh 
+importsql.sh 
+
+*.iws 
 *.ipr
-*.iws
-*.iml
+*.iml 
+
 target/
-out/*
-rebel.xml
+
